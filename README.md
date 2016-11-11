@@ -12,8 +12,7 @@ Example:
 
 crontab -e
 
-#a prompt will show up#
-
+and for a cronjob to run every 5 minutes...
 
 */5 * * * * /path/to/update-time.sh
 
