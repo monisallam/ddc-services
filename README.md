@@ -10,12 +10,18 @@ Set up a cronjob on every node that you want to be time synced, and point that j
 
 Example:
 
-crontab -e
+First install ntp, which on an debian system could look like this
+
+```sudo apt-get install ntp```
+
+Then enter the interactive crontab prompt
+
+```crontab -e```
 
 and for a cronjob to run every 5 minutes...
 
-*/5 * * * * /path/to/update-time.sh
+```*/5 * * * * /path/to/update-time.sh```
 
-crontab -l
+```crontab -l```
 
 should list your cronjob
